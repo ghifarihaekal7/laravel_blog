@@ -1,4 +1,6 @@
-@extends('head')
+@extends('main')
+
+@section('title', '| Contact')
 
 @section('content')
       <div class="row">
