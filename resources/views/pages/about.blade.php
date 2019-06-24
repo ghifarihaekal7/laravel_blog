@@ -81,9 +81,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    About me
+                    About {{ $data['fullname'] }}
                 </div>
-                <p>I am someone.</p>
+                <p>I am someone that can be contacted via {{ $data['email'] }}</p>
 
             </div>
         </div>
