@@ -14,3 +14,5 @@
 Route::get('/', 'PagesController@getIndex');
 Route::get('about', 'PagesController@getAbout');
 Route::get('contact', 'PagesController@getContact');
+//Automatically create all the route in the PostController
+Route::resource('posts', 'PostController');
