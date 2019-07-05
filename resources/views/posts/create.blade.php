@@ -10,10 +10,10 @@
         {{ Form::label('title', 'Title:') }}
         {{ Form::text('title', null, array('class' => 'form-control')) }}
 
-        {{ Form::label('content', 'Post Content:') }}
-        {{ Form::textarea('content', null, array('class' => 'form-control')) }}
+        {{ Form::label('body', 'Post Content:') }}
+        {{ Form::textarea('body', null, array('class' => 'form-control')) }}
 
-        {{ Form::submit('Create Post', array('class' => 'btn btn-success btn-lg btn-block')) }}
+        {{ Form::submit('Create Post', array('class' => 'btn btn-success btn-lg btn-block', 'style' => 'margin-top:10px;')) }}
       {!! Form::close() !!}
     </div>
   </div>
