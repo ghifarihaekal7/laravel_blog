@@ -14,5 +14,10 @@ use Illuminate\Http\Request;
 */
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
+    Route::get('/', 'PagesController@getIndex');
+    Route::get('about', 'PagesController@getAbout');
+    Route::get('contact', 'PagesController@getContact');
+    //Automatically create all the route in the PostController
+    Route::resource('posts', 'PostController');
     return $request->user();
 });
